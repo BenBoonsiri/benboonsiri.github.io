@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  font-family: 'Montserrat';
+  /* font-weight: 600; */
+  color: #2b2b2b;
+}
+
+h4 {
+  font-family: 'Nunito';
+  color: #2b2b2b;
+}
+
+p {
+  font-family: 'Nunito';
+  font-weight: 350;
+  color: #2b2b2b;
+  font-size: 26px;
+}

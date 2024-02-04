@@ -2,20 +2,20 @@
 import logo from './profile_circle.png';
 import './App.css';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
 
 function App() {
   return (
     <div className="App">
       <div style={{marginTop: '20px', marginRight: '30px', textAlign: 'right'}}>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px'}}>
-            Home
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito'}}>
+            About
         </Button>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none' , fontSize: '18px'}}>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none' , fontSize: '18px', fontFamily: 'Nunito'}}>
             Photos
         </Button>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px' }}>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito' }}>
             Projects
         </Button>
       </div>
@@ -26,9 +26,10 @@ function App() {
           </div>
           <div style={{ flex: 1, margin: '50px', textAlign: 'left' }}>
             <h1>Hello</h1>
-            <h5>About me</h5>
+            {/* <Typography variant="h1">Hello</Typography> */}
+            <h4>About me</h4>
             <p>
-              Hey I'm Ben! I'm a Computer Science student at the University of Waterloo! I have completed Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce!
+              Hey I'm Ben! I'm a graduating Computer Science student at the University of Waterloo! I have completed Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce!
             </p>
             {/* <a
               className="App-link"
