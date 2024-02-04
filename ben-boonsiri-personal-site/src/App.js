@@ -20,11 +20,11 @@ function App() {
         </Button>
       </div>
       <header className="App-header">
-        <div style={{ display: 'flex', alignItems: 'center', margin: '50px'}}>
+        <div style={{ display: 'flex', alignItems: 'center', margin: '50px', maxWidth: '1100px'}}>
           <div style={{ flex: 1, marginRight: '10px', textAlign: 'right'}}>
             <img src={logo} className="App-logo" alt="logo" />
           </div>
-          <div style={{ flex: 1, margin: '50px', textAlign: 'left' }}>
+          <div style={{ flex: 1, margin: '50px', textAlign: 'left'}}>
             <h1>Hello</h1>
             {/* <Typography variant="h1">Hello</Typography> */}
             <h4>About me</h4>
