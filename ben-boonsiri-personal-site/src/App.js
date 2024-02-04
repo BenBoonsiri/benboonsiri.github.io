@@ -1,12 +1,23 @@
 // import logo from './logo.svg';
 import logo from './profile_circle.png';
 import './App.css';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
 
 function App() {
   return (
     <div className="App">
-      <div>
-        hi
+      <div style={{marginTop: '20px', marginRight: '30px', textAlign: 'right'}}>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px'}}>
+            Home
+        </Button>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none' , fontSize: '18px'}}>
+            Photos
+        </Button>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px' }}>
+            Projects
+        </Button>
       </div>
       <header className="App-header">
         <div style={{ display: 'flex', alignItems: 'center', margin: '50px'}}>
