@@ -3,6 +3,7 @@ import logo from './profile_circle.png';
 import './App.css';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
 
 
 function App() {
@@ -42,8 +43,28 @@ function App() {
           </div>
         </div>
       </header>
+      <div className="divider-container">
+        <Divider />
+      </div>
       <div className='bottom-bar'>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito'}}>
+        <div className='bottom-bar-element'>
+          Resume
+        </div>
+        <div className='bottom-bar-element'>
+          <b>Email</b>
+          <div className='bottom-bar-element-content'>benboonsiri@gmail.com</div>
+        </div>
+        <div className='bottom-bar-element'>
+          <b>Phone</b>
+          <div className='bottom-bar-element-content'>905-966-2811</div>
+        </div>
+        <div className='bottom-bar-element'>
+          <b>Accounts</b>
+          <div className='bottom-bar-element-content'>linkedIn</div>
+        </div>
+        {/* resume, email - benboonsiri@gmail.com, phone - 905-966-2811, Accounts - linkedIn GitHub */}
+
+        {/* <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito'}}>
             About
         </Button>
         <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none' , fontSize: '18px', fontFamily: 'Nunito'}}>
@@ -51,7 +72,7 @@ function App() {
         </Button>
         <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito' }}>
             Projects
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
