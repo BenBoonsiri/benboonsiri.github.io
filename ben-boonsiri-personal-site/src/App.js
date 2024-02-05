@@ -19,7 +19,7 @@ function App() {
             Projects
         </Button>
       </div>
-      <header className="App-header">
+      <header className="content">
         <div style={{ display: 'flex', alignItems: 'center', margin: '50px', maxWidth: '1100px'}}>
           <div style={{ flex: 1, marginRight: '10px', textAlign: 'right'}}>
             <img src={logo} className="App-logo" alt="logo" />
@@ -29,7 +29,7 @@ function App() {
             {/* <Typography variant="h1">Hello</Typography> */}
             <h4>About me</h4>
             <p>
-              Hey I'm Ben! I'm a graduating Computer Science student at the University of Waterloo! I have completed Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce!
+              Hey I'm Ben! I'm a graduating Computer Science student at the University of Waterloo. I have completed Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce!
             </p>
             {/* <a
               className="App-link"
@@ -42,8 +42,16 @@ function App() {
           </div>
         </div>
       </header>
-      <div>
-        low
+      <div className='bottom-bar'>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito'}}>
+            About
+        </Button>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none' , fontSize: '18px', fontFamily: 'Nunito'}}>
+            Photos
+        </Button>
+        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito' }}>
+            Projects
+        </Button>
       </div>
     </div>
   );
