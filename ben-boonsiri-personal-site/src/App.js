@@ -29,12 +29,12 @@ function App() {
           <div style={{ flex: 1, marginRight: '10px', textAlign: 'right'}}>
             <img src={logo} className="App-logo" alt="logo" />
           </div>
-          <div style={{ flex: 1, margin: '50px', textAlign: 'left'}}>
+          <div style={{ flex: 1, margin: '50px', marginRight: '10px', textAlign: 'left'}}>
             <h1>Hello</h1>
             {/* <Typography variant="h1">Hello</Typography> */}
             <h4>About me</h4>
             <p>
-              Hey I'm Ben! I'm a graduating Computer Science student at the University of Waterloo. I have completed Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce!
+              Hey I'm Ben! I'm a graduating Computer Science student at the University of Waterloo. I have had Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce! I also love hockey, soccer, and photography!
             </p>
             {/* <a
               className="App-link"
