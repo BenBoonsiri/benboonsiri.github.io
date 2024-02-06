@@ -7,6 +7,10 @@ import Divider from '@mui/material/Divider';
 
 
 function App() {
+  const emailAddress = 'benboonsiri@gmail.com';
+  const mailtoLink = `mailto:${emailAddress}`;
+
+
   return (
     <div className="App">
       <div style={{marginTop: '20px', marginRight: '30px', textAlign: 'right'}}>
@@ -49,13 +53,15 @@ function App() {
       <div className='bottom-bar'>
         <div className='bottom-bar-element'>
           <div className='bottom-bar-element-item'>
-            Resume
+            <a style={{ fontWeight:'bold', color: '#3d3d3d' }} href="https://drive.google.com/file/d/1GCRqCVV4EWvDdMeh3Eab9vF9CkqOHhy7/view?usp=sharing">Resume</a>
           </div>
         </div>
         <div className='bottom-bar-element'>
           <div className='bottom-bar-element-item'>
             <b>Email</b>
-            <div className='bottom-bar-element-content'>benboonsiri@gmail.com</div>
+            <div className='bottom-bar-element-content'>
+              <a style={{color: '#696969'}} href={mailtoLink}>benboonsiri@gmail.com</a>
+            </div>
           </div>
         </div>
         <div className='bottom-bar-element'>
