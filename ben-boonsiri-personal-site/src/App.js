@@ -48,31 +48,29 @@ function App() {
       </div>
       <div className='bottom-bar'>
         <div className='bottom-bar-element'>
-          Resume
+          <div className='bottom-bar-element-item'>
+            Resume
+          </div>
         </div>
         <div className='bottom-bar-element'>
-          <b>Email</b>
-          <div className='bottom-bar-element-content'>benboonsiri@gmail.com</div>
+          <div className='bottom-bar-element-item'>
+            <b>Email</b>
+            <div className='bottom-bar-element-content'>benboonsiri@gmail.com</div>
+          </div>
         </div>
         <div className='bottom-bar-element'>
-          <b>Phone</b>
-          <div className='bottom-bar-element-content'>905-966-2811</div>
+          <div className="bottom-bar-element-item">
+            <b>Phone</b>
+            <div className='bottom-bar-element-content'>905-966-2811</div>
+          </div>
         </div>
         <div className='bottom-bar-element'>
-          <b>Accounts</b>
-          <div className='bottom-bar-element-content'>linkedIn</div>
+          <div className='bottom-bar-element-item'>
+            <b>Accounts</b>
+            <div className='bottom-bar-element-content'>linkedIn</div>
+          </div>
         </div>
         {/* resume, email - benboonsiri@gmail.com, phone - 905-966-2811, Accounts - linkedIn GitHub */}
-
-        {/* <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito'}}>
-            About
-        </Button>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none' , fontSize: '18px', fontFamily: 'Nunito'}}>
-            Photos
-        </Button>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito' }}>
-            Projects
-        </Button> */}
       </div>
     </div>
   );
