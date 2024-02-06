@@ -84,11 +84,22 @@ p {
   font-size: 16px;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 10px;
 }
 
 .divider-container{
   width: 90%;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.svg-button {
+  margin-top: 2px;
+  transition: filter 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.svg-button:hover {
+  /* filter: brightness(0.8); */
+  fill: #696969;
 }
