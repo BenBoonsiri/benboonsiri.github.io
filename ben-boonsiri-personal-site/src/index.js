@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import About from './About';
 import Navigation from './Navigation';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@mui/material/styles';
@@ -15,9 +15,9 @@ root.render(
       <Router>
         <Navigation />
         <Routes>
-          <Route path='/' exact element={<App/>} />
-          <Route path='/about' exact element={<App/>} />
-          <Route path='/photos' element={<App/>} />
+          <Route path='/' exact element={<About/>} />
+          <Route path='/about' exact element={<About/>} />
+          <Route path='/photos' exact element={<About/>} />
         </Routes>
       </Router>
     </ThemeProvider>

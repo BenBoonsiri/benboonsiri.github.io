@@ -1,19 +1,19 @@
 // import logo from './logo.svg';
 import logo from './profile_circle.png';
-import './App.css';
+import './About.css';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
-function App() {
+function About() {
   const emailAddress = 'benboonsiri@gmail.com';
   const mailtoLink = `mailto:${emailAddress}`;
 
 
   return (
-    <div className="App">
+    <div className="About">
       <header className="content">
         <div style={{ display: 'flex', alignItems: 'center', margin: '50px', maxWidth: '1100px'}}>
           <div style={{ flex: 1, marginRight: '10px', textAlign: 'right'}}>
@@ -81,4 +81,4 @@ function App() {
   );
 }
 
-export default App;
+export default About;
