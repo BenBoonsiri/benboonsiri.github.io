@@ -4,6 +4,7 @@ import './App.css';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 function App() {
@@ -13,17 +14,6 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{marginTop: '20px', marginRight: '30px', textAlign: 'right'}}>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito'}}>
-            About
-        </Button>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none' , fontSize: '18px', fontFamily: 'Nunito'}}>
-            Photos
-        </Button>
-        <Button variant="text" color="primary" style={{ marginRight: '20px', textTransform: 'none', fontSize: '18px', fontFamily: 'Nunito' }}>
-            Projects
-        </Button>
-      </div>
       <header className="content">
         <div style={{ display: 'flex', alignItems: 'center', margin: '50px', maxWidth: '1100px'}}>
           <div style={{ flex: 1, marginRight: '10px', textAlign: 'right'}}>
