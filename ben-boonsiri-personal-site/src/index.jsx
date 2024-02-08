@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { BrowserRouter as Router, Routes, Route, useRoutes } from 'react-router-dom';
+import Photos from './Photos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +18,7 @@ root.render(
         <Routes>
           <Route path='/' exact element={<About/>} />
           <Route path='/about' exact element={<About/>} />
-          <Route path='/photos' exact element={<About/>} />
+          <Route path='/photos' exact element={<Photos/>} />
         </Routes>
       </Router>
     </ThemeProvider>
