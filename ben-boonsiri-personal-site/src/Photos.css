@@ -4,4 +4,13 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+    text-align: start;
+}
+
+h2 {
+    /* font-family: 'Nunito'; */
+    font-family: 'Montserrat';
+    color: #2b2b2b;
+    align-self: flex-start;
+    margin-bottom: 0px;
 }
