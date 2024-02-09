@@ -43,7 +43,7 @@ function About() {
       <div className='bottom-bar'>
         <div className='bottom-bar-element'>
           <div className='bottom-bar-element-item'>
-            <a style={{ fontWeight:'bold', color: '#3d3d3d' }} href="https://drive.google.com/file/d/1GCRqCVV4EWvDdMeh3Eab9vF9CkqOHhy7/view?usp=sharing">Resume</a>
+            <a style={{ fontWeight:'bold', color: '#3d3d3d' }} href="https://drive.google.com/file/d/1igbSBgTICk3ZR-FPFKw7SMWGO8N7WDtv/view?usp=sharing">Resume</a>
           </div>
         </div>
         <div className='bottom-bar-element'>
