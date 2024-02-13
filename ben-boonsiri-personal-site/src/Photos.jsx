@@ -1,7 +1,5 @@
-import React from 'react';
-import Box from '@mui/material/Box';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
+import React, { useState } from 'react';
+import { Box, ImageList, ImageListItem, Dialog, DialogContent, DialogContentText, DialogTitle, Button } from '@mui/material';
 import './Photos.css';
 
 
@@ -89,6 +87,19 @@ function Photos() {
     },
   ];
 
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [open, setOpen] = useState(false);
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+
   return (
     <div className='photo-box'>
       {/* <Box sx={{ width: '50%', height: 750 }}> */}
@@ -97,7 +108,7 @@ function Photos() {
         <p style={{fontSize:'20px', marginBottom: '50px', marginTop: '15px'}}>I also love taking photos. These are some of my favourites.</p>
         <ImageList variant="masonry" cols={3} gap={8}>
           {itemData.map((item) => (
-            <ImageListItem key={item.img}>
+            <ImageListItem key={item.img} onClick={() => handleImageClick(item)}>
               <img
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -108,6 +119,13 @@ function Photos() {
           ))}
         </ImageList>
       </Box>
+      <Dialog open={open} onClose={handleClose}  maxWidth="lg" maxHeight="lg" PaperProps={{ style: { boxShadow: 'none', backgroundColor: 'transparent' } }}>
+        <DialogContent style={{ overflow: 'hidden'  }}>
+          {selectedImage && (
+            <img src={selectedImage.img} alt={selectedImage.title} style={{  width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: "90vh", objectFit: 'contain' }} />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
