@@ -105,7 +105,7 @@ function Photos() {
       {/* <Box sx={{ width: '50%', height: 750 }}> */}
       <Box sx={{ width: 700, height: '100%' , marginBottom: '70px'}}>
         <h2>Photography</h2>
-        <p style={{fontSize:'20px', marginBottom: '50px', marginTop: '15px'}}>I also love taking photos. These are some of my favourites.</p>
+        <p style={{fontSize:'20px', marginBottom: '50px', marginTop: '15px'}}>I also love taking photos. These are some of my favourites. Click to expand.</p>
         <ImageList variant="masonry" cols={3} gap={8}>
           {itemData.map((item) => (
             <ImageListItem key={item.img} onClick={() => handleImageClick(item)}>
