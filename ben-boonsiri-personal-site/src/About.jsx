@@ -19,7 +19,7 @@ function About() {
             <h1>Hello</h1>
             <h4>About me</h4>
             <p>
-              Hey I'm Ben! I'm a graduating Computer Science student at the University of Waterloo. I have had Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce! I also love hockey, soccer, and photography!
+              Hey I'm Ben! I'm a graduating computer science student at the University of Waterloo. I have had Software Engineering roles at companies including Tesla, Deliverect, Arctic Wolf, and SPS Commerce! I also love hockey, soccer, and photography!
             </p>
           </div>
         </div>
@@ -30,7 +30,7 @@ function About() {
       <div className='bottom-bar'>
         <div className='bottom-bar-element'>
           <div className='bottom-bar-element-item'>
-            <a style={{ fontWeight:'bold', color: '#3d3d3d' }} href="https://drive.google.com/file/d/1VOISFPQaGBzptlqnCSJkjqDJKVyr7gic/view?usp=sharing">Resume</a>
+          <a style={{ fontWeight:'bold', color: '#3d3d3d' }} href="https://drive.google.com/file/d/1VOISFPQaGBzptlqnCSJkjqDJKVyr7gic/view?usp=sharing">Resume</a>
           </div>
         </div>
         <div className='bottom-bar-element'>
